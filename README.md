@@ -1,9 +1,15 @@
 fastexcel
 =========
-[![Build Status](https://github.com/dhatim/fastexcel/workflows/build/badge.svg)](https://github.com/dhatim/fastexcel/actions)
-[![Coverage Status](https://coveralls.io/repos/github/dhatim/fastexcel/badge.svg?branch=master)](https://coveralls.io/github/dhatim/fastexcel?branch=master)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.dhatim/fastexcel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.dhatim/fastexcel)
-[![Javadocs](http://www.javadoc.io/badge/org.dhatim/fastexcel.svg)](http://www.javadoc.io/doc/org.dhatim/fastexcel)
+[![Build Status](https://github.com/ezand/fastexcel/workflows/build/badge.svg)](https://github.com/ezand/fastexcel/actions)
+[![Coverage Status](https://coveralls.io/repos/github/ezand/fastexcel/badge.svg?branch=master)](https://coveralls.io/github/ezand/fastexcel?branch=master)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.ezand/fastexcel/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.ezand/fastexcel)
+[![Javadocs](http://www.javadoc.io/badge/com.ezand/fastexcel.svg)](http://www.javadoc.io/doc/com.ezand/fastexcel)
+
+# Fork
+
+This fork adds the following functionality:
+* Provide access to the persistent sheet id. This id remains the same regardless of rearrangement of sheet order.
+  * `org.dhatim.fastexcel.reader.Sheet/getPersistentId` 
 
 # fastexcel-writer
 
@@ -38,7 +44,7 @@ Note heap memory usage is measured just before flushing the workbook to the outp
 - Include the following dependency in your POM:
 ```xml
 <dependency>
-    <groupId>org.dhatim</groupId>
+    <groupId>com.ezand</groupId>
     <artifactId>fastexcel</artifactId>
     <version>0.15.7</version>
 </dependency>
@@ -46,7 +52,7 @@ Note heap memory usage is measured just before flushing the workbook to the outp
 
 ## Examples
 
-The javadoc for the last release is available [here](http://www.javadoc.io/doc/org.dhatim/fastexcel).
+The javadoc for the last release is available [here](http://www.javadoc.io/doc/com.ezand/fastexcel).
 
 ### Simple workbook
 
